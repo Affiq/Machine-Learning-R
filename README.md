@@ -1,6 +1,6 @@
 # R-Classifiers
 
-This repository highlights different methods of Machine Learning used in Artificial Intelligence, programmed in R as part of a set of academic exercises. Each folder contains the examples of Unsupervised Learning (K-Means Clustering, Nearest Neighbour, Agglomerative Clustering and Apriori) and Supervised Learning (Decision Trees and Neural Networks). The ReadMe serves as a brief overview of each algorithm used.
+This repository highlights different methods of Machine Learning used in Artificial Intelligence, programmed in R as part of a set of academic exercises. Each folder contains the examples of Unsupervised Learning (K-Means Clustering, Agglomerative Clustering and Apriori) and Supervised Learning (Decision Trees, Nearest Neighbour and Neural Networks). The ReadMe serves as a brief overview of each algorithm used.
 
 <h2> Clustering Methods </h2>
 <p> To partition a dataset into subsets (known as Clusters), so that the data in each subset share some common trait - often proximity or similarity for some defined distance measurement. A cluster is therefore a collection of objects where the constituents are somewhat similar to each other and are disimilar to objects belonging in another cluster. It can see usage in scenarios that include Social networks, marketing, resource allocation, customer segregation and more. </p>
@@ -46,24 +46,13 @@ This repository highlights different methods of Machine Learning used in Artific
       butter}             => {whole milk}       0.01148958  0.5736041 0.02003050 2.244885   113
 [5]  {tropical fruit,                                                                          
       root vegetables}    => {whole milk}       0.01199797  0.5700483 0.02104728 2.230969   118
-[6]  {root vegetables,                                                                         
-      yogurt}             => {whole milk}       0.01453991  0.5629921 0.02582613 2.203354   143
-[7]  {other vegetables,                                                                        
-      domestic eggs}      => {whole milk}       0.01230300  0.5525114 0.02226741 2.162336   121
-[8]  {yogurt,                                                                                  
-      whipped/sour cream} => {whole milk}       0.01087951  0.5245098 0.02074225 2.052747   107
-[9]  {root vegetables,                                                                         
-      rolls/buns}         => {whole milk}       0.01270971  0.5230126 0.02430097 2.046888   125
-[10] {pip fruit,                                                                               
-      other vegetables}   => {whole milk}       0.01352313  0.5175097 0.02613116 2.025351   133
-[11] {tropical fruit,                                                                          
-      yogurt}             => {whole milk}       0.01514997  0.5173611 0.02928317 2.024770   149
-[12] {other vegetables,                                                                        
-      yogurt}             => {whole milk}       0.02226741  0.5128806 0.04341637 2.007235   219
-[13] {other vegetables,                                                                        
-      whipped/sour cream} => {whole milk}       0.01464159  0.5070423 0.02887646 1.984385   144
-[14] {root vegetables,                                                                         
-      rolls/buns}         => {other vegetables} 0.01220132  0.5020921 0.02430097 2.594890   120
-[15] {root vegetables,                                                                         
-      yogurt}             => {other vegetables} 0.01291307  0.5000000 0.02582613 2.584078   127
+...
 ```
+
+<h2> Decision Trees </h2>
+<p> Data can be classified by creating a decision tree from a training set (the most popular method). Nodes in the tree represent decisions while arcs represent possible answers. Each terminal node (leaf node) represent a classification of our data. Once our tree is formed, we can start classifying data by traversing starting from the root node and following the correct branches depending upon the decision. Following these rules, the algorithm will then reach a leaf node which represents the classification of our data. </p>
+
+<p> Building our decision tree, often known as Rule Induction, involves splitting nodes until all elements belong to one class, in which they become terminal nodes. Different algorithms may be used to form these decision trees, but ID3 will be used in our examples as they incorporate an element of information gain (entropy) into the generation. </p>
+
+<h3> Overfitting </h3>
+<p> Often our model may be suitable for our training set but give incorrect classifications for our test set, which is an indication of overfitting to the data set. While one may opt to retrain or create a new model entirely, there exists methods to alter different models to compensate for this overfitting. In Decision Trees, this method is called 'Occam's Razor' which is used to prune undesirable decisions in our decision tree. Each leaf node is inspected and if it does not reduce classification accuracy for the training set, it is removed and thereby 'pruned'</p>
