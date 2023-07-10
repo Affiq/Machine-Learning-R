@@ -1,6 +1,6 @@
 # R-Classifiers
 
-This repository highlights different methods of Machine Learning used in Artificial Intelligence, programmed in R as part of a set of academic exercises.
+This repository highlights different methods of Machine Learning used in Artificial Intelligence, programmed in R as part of a set of academic exercises. Each folder contains the examples of Unsupervised Learning (K-Means Clustering, Nearest Neighbour, Agglomerative Clustering and Apriori) and Supervised Learning (Decision Trees and Neural Networks).
 
 <h2> Clustering Methods </h2>
 <p> To partition a dataset into subsets (known as Clusters), so that the data in each subset share some common trait - often proximity or similarity for some defined distance measurement. A cluster is therefore a collection of objects where the constituents are somewhat similar to each other and are disimilar to objects belonging in another cluster. It can see usage in scenarios that include Social networks, marketing, resource allocation, customer segregation and more. </p>
@@ -11,6 +11,18 @@ This repository highlights different methods of Machine Learning used in Artific
 <p> K-Means clustering involves placing K points into the feature space which will function as a cluster's centroid. The algorithm then iteratively places each data into the closest cluster before the centroid is recalculated. This is then repeated until the maximum number of iterations is run or that there is no change in centroid position. This can be advantageous as the algorithm is typically faster than other clustering algorithms and can produce tighter clusters, useful for 'globular' datasets. </p>
 
 <p> However, due to the fixed number of clusters, the results depend entirely on the chosen K-Value and hence may require some trial and error before finding an optimal clustering. Different initial partitions (due to the K points being randomly chosen at the start) can also result in different clusterings. There also exists the probability of producing empty clusters - not necessarily a bad indication. Typically, this algorithm should be avoided for non-globular datasets.</p>
+
+<h3> Agglomerative / Heirarchical Clustering </h3>
+<p> Agglomerative Clustering Results in a series of clustering results where all results start off with each object in it's own cluster and end with all of the objects in the same cluster. Intermediate clusters are created by a series of pairs or merges, creating a tree-like plot. The resultant tree like structure is called a Dendogram. 1. 
+
+<p> At the start of the algorithm, each item is assigned to its own cluster (n clusters of size one) and let the distances between the clusters equal the distances between the objects they contain. The algorithm then iteratively finds the closest pair of clusters and merge them into a single cluster (one less cluster) and then re-computes the distances between the new cluster and each of the old clusters (this can also be dependent on the linkages used which will be explained) until one cluster is left. </p>
+
+<p> The type of linkage used can also determine the distances between each cluster where: </p>
+<ul>
+     <li> Single Linkage is the shortest distance between two clusters (as clusters may contain many nodes) </li>
+     <li> Average Linkage is the distance between the average centroids between two clusters</li>
+     <li> Complete Linkage is the largest distance between two clusters</li>
+</ul>
 
 <h2> Apriori Algorithm </h2>
 <p>Apriori algorithm is an algorithm that is typically run on shopping basket data to generate rules about sets of items and their relation to each other - namely deriving 3 values called Support, Lift and Confidence from the sets of items. One such example is that a large chain finding a correlation between two unseemingly related items - beer bottles and diapers - which were often bought together. From here a business could aim to change a strategy to further capitalise on this correlation, such as physically placing the two items closer together, or by bundling the two items together and offering a discount (although this may seem a bit taboo). </p>
