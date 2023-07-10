@@ -1,6 +1,6 @@
 # R-Classifiers
 
-This repository highlights different methods of Machine Learning used in Artificial Intelligence, programmed in R as part of a set of academic exercises. Each folder contains the examples of Unsupervised Learning (K-Means Clustering, Nearest Neighbour, Agglomerative Clustering and Apriori) and Supervised Learning (Decision Trees and Neural Networks).
+This repository highlights different methods of Machine Learning used in Artificial Intelligence, programmed in R as part of a set of academic exercises. Each folder contains the examples of Unsupervised Learning (K-Means Clustering, Nearest Neighbour, Agglomerative Clustering and Apriori) and Supervised Learning (Decision Trees and Neural Networks). The ReadMe serves as a brief overview of each algorithm used.
 
 <h2> Clustering Methods </h2>
 <p> To partition a dataset into subsets (known as Clusters), so that the data in each subset share some common trait - often proximity or similarity for some defined distance measurement. A cluster is therefore a collection of objects where the constituents are somewhat similar to each other and are disimilar to objects belonging in another cluster. It can see usage in scenarios that include Social networks, marketing, resource allocation, customer segregation and more. </p>
