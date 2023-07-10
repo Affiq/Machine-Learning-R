@@ -17,15 +17,15 @@ This repository highlights different methods of Machine Learning used in Artific
 
 <p> At the start of the algorithm, each item is assigned to its own cluster (n clusters of size one) and let the distances between the clusters equal the distances between the objects they contain. The algorithm then iteratively finds the closest pair of clusters and merge them into a single cluster (one less cluster) and then re-computes the distances between the new cluster and each of the old clusters (this can also be dependent on the linkages used which will be explained) until one cluster is left. </p>
 
-<h3> Fuzzy Clustering </h3>
-<p> Both clustering methods introduce the problem of only belonging to one cluster, in cases of equal probability of going to a cluster, the data will eventually diverge towards one. Fuzzy Clustering can be used where a cluster membership can be a weight between 0 and 1 to determine the 'likeness' to the cluster. The most notable Fuzzy Clustering method is known as the Fuzzy C-Means which is a 'fuzzification' of the K-Means algorithm.</p>
-
 <p> The type of linkage used can also determine the distances between each cluster where: </p>
 <ul>
      <li> Single Linkage is the shortest distance between two clusters (as clusters may contain many nodes) </li>
      <li> Average Linkage is the distance between the average centroids between two clusters</li>
      <li> Complete Linkage is the largest distance between two clusters</li>
 </ul>
+
+<h3> Fuzzy Clustering </h3>
+<p> Both clustering methods introduce the problem of only belonging to one cluster, in cases of equal probability of going to a cluster, the data will eventually diverge towards one. Fuzzy Clustering can be used where a cluster membership can be a weight between 0 and 1 to determine the 'likeness' to the cluster. The most notable Fuzzy Clustering method is known as the Fuzzy C-Means which is a 'fuzzification' of the K-Means algorithm.</p>
 
 <h2> Apriori Algorithm </h2>
 <p>Apriori algorithm is an algorithm that is typically run on shopping basket data to generate rules about sets of items and their relation to each other - namely deriving 3 values called Support, Lift and Confidence from the sets of items. One such example is that a large chain finding a correlation between two unseemingly related items - beer bottles and diapers - which were often bought together. From here a business could aim to change a strategy to further capitalise on this correlation, such as physically placing the two items closer together, or by bundling the two items together and offering a discount (although this may seem a bit taboo). </p>
