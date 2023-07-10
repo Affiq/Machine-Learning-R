@@ -2,6 +2,13 @@
 
 This repository highlights different methods of Machine Learning used in Artificial Intelligence, programmed in R as part of a set of academic exercises.
 
+<h2> Clustering Methods </h2>
+<p> To partition a dataset into subsets (known as Clusters), so that the data in each subset share some common trait - often proximity or similarity for some defined distance measurement. A cluster is therefore a collection of objects where the constituents are somewhat similar to each other and are disimilar to objects belonging in another cluster. It can see usage in scenarios that include Social networks, marketing, resource allocation, customer segregation and more. </p>
+
+<p> Distance is a metric used to measure similarity and disimilarity between datapoints, but different types of distance metrics can also be used. These can include the typical Euclidean distance (which can be considered as the magnitude of the vectors) or the Manhattan distances which are the sum of all the absolute differences of the vectors. </p>
+
+<h3></h3>
+
 <h2> Apriori Algorithm </h2>
 <p>Apriori algorithm is an algorithm that is typically run on shopping basket data to generate rules about sets of items and their relation to each other - namely deriving 3 values called Support, Lift and Confidence from the sets of items. One such example is that a large chain finding a correlation between two unseemingly related items - beer bottles and diapers - which were often bought together. From here a business could aim to change a strategy to further capitalise on this correlation, such as physically placing the two items closer together, or by bundling the two items together and offering a discount (although this may seem a bit taboo). </p>
 
