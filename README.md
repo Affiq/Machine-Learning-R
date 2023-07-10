@@ -17,6 +17,9 @@ This repository highlights different methods of Machine Learning used in Artific
 
 <p> At the start of the algorithm, each item is assigned to its own cluster (n clusters of size one) and let the distances between the clusters equal the distances between the objects they contain. The algorithm then iteratively finds the closest pair of clusters and merge them into a single cluster (one less cluster) and then re-computes the distances between the new cluster and each of the old clusters (this can also be dependent on the linkages used which will be explained) until one cluster is left. </p>
 
+<h3> Fuzzy Clustering </h3>
+<p> Both clustering methods introduce the problem of only belonging to one cluster, in cases of equal probability of going to a cluster, the data will eventually diverge towards one. Fuzzy Clustering can be used where a cluster membership can be a weight between 0 and 1 to determine the 'likeness' to the cluster. The most notable Fuzzy Clustering method is known as the Fuzzy C-Means which is a 'fuzzification' of the K-Means algorithm.</p>
+
 <p> The type of linkage used can also determine the distances between each cluster where: </p>
 <ul>
      <li> Single Linkage is the shortest distance between two clusters (as clusters may contain many nodes) </li>
